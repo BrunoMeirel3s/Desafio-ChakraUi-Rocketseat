@@ -1,9 +1,31 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Flex, Box, HStack, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  HStack,
+  Link,
+  useBreakpointValue,
+  Circle,
+  Divider,
+} from "@chakra-ui/react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// import Swiper core and required modules
+import SwiperCore, { Navigation, Parallax, Pagination } from "swiper/core";
+
+// install Swiper modules
+SwiperCore.use([Parallax, Pagination, Navigation]);
+
 import logoImg from "../assets/logo.png";
 import backgroundImg from "../assets/background.png";
 import airplaneImg from "../assets/airplane.png";
+
+import glassImg from "../assets/vector.png";
+import beachImg from "../assets/group.png";
+import buildingImg from "../assets/building.png";
+import museumImg from "../assets/museum.png";
+import hearthImg from "../assets/earth.png";
 
 export default function Home() {
   const imageSizes = useBreakpointValue({
@@ -18,6 +40,12 @@ export default function Home() {
     base: "none",
     md: "block",
   });
+
+  const showImages = useBreakpointValue({
+    base: false,
+    md: true,
+  });
+
   return (
     <>
       <Head>
@@ -29,6 +57,8 @@ export default function Home() {
           justify="center"
           align="center"
           h={["3.150em", "5em", "5.8em"]}
+          marginTop="0.5em"
+          marginBottom="0.5em"
         >
           <Image
             src={logoImg}
@@ -64,6 +94,84 @@ export default function Home() {
               </Box>
             </Flex>
           </Box>
+        </Flex>
+        <HStack
+          w="80vw"
+          marginLeft="10vw"
+          marginRight="10vw"
+          marginTop="4em"
+          marginBottom="4em"
+          justifyContent="space-around"
+        >
+          <Link>
+            <Flex flexDirection={showImages ? "column" : "row"} align="center">
+              {showImages ? (
+                <Image layout="fixed" src={glassImg}></Image>
+              ) : (
+                <Circle size="1em" bg="highlight"></Circle>
+              )}
+              Vida noturna
+            </Flex>
+          </Link>
+          <Link>
+            <Flex flexDirection={showImages ? "column" : "row"} align="center">
+              {showImages ? (
+                <Image layout="fixed" src={beachImg}></Image>
+              ) : (
+                <Circle size="1em" bg="highlight"></Circle>
+              )}
+              Praia
+            </Flex>
+          </Link>
+          <Link>
+            <Flex flexDirection={showImages ? "column" : "row"} align="center">
+              {showImages ? (
+                <Image layout="fixed" src={buildingImg}></Image>
+              ) : (
+                <Circle size="1em" bg="highlight"></Circle>
+              )}
+              Moderno
+            </Flex>
+          </Link>
+          <Link>
+            <Flex flexDirection={showImages ? "column" : "row"} align="center">
+              {showImages ? (
+                <Image layout="fixed" src={museumImg}></Image>
+              ) : (
+                <Circle size="1em" bg="highlight"></Circle>
+              )}
+              Clássico
+            </Flex>
+          </Link>
+          <Link>
+            <Flex flexDirection={showImages ? "column" : "row"} align="center">
+              {showImages ? (
+                <Image layout="fixed" src={hearthImg}></Image>
+              ) : (
+                <Circle size="1em" bg="highlight"></Circle>
+              )}
+              E mais...
+            </Flex>
+          </Link>
+        </HStack>
+        <Flex justify="center" marginBottom="1em">
+          <Divider color="black" width="4em" />
+        </Flex>
+        <Flex
+          fontSize={["1em", "1.5em", "2em"]}
+          flexDirection="column"
+          align="center"
+        >
+          <Box>Vamos nessa?</Box>
+          <Box>Então escolha seu continente</Box>
+        </Flex>
+        <Flex w="80vw" marginLeft="10vw" marginRight="10vw">
+          <Swiper navigation={true} className="mySwiper" loop="true">
+            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>Slide 2</SwiperSlide>
+            <SwiperSlide>Slide 3</SwiperSlide>
+            <SwiperSlide>Slide 4</SwiperSlide>
+          </Swiper>
         </Flex>
       </Flex>
     </>
