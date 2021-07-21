@@ -8,6 +8,7 @@ import {
   useBreakpointValue,
   Circle,
   Divider,
+  SimpleGrid,
 } from "@chakra-ui/react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -95,13 +96,14 @@ export default function Home() {
             </Flex>
           </Box>
         </Flex>
-        <HStack
+        <SimpleGrid
           w="80vw"
           marginLeft="10vw"
           marginRight="10vw"
           marginTop="4em"
           marginBottom="4em"
-          justifyContent="space-around"
+          spacing={["4", "6"]}
+          minChildWidth="150px"
         >
           <Link>
             <Flex flexDirection={showImages ? "column" : "row"} align="center">
@@ -153,7 +155,7 @@ export default function Home() {
               E mais...
             </Flex>
           </Link>
-        </HStack>
+        </SimpleGrid>
         <Flex justify="center" marginBottom="1em">
           <Divider color="black" width="4em" />
         </Flex>
@@ -161,16 +163,148 @@ export default function Home() {
           fontSize={["1em", "1.5em", "2em"]}
           flexDirection="column"
           align="center"
+          marginBottom="1.2em"
         >
           <Box>Vamos nessa?</Box>
           <Box>Então escolha seu continente</Box>
         </Flex>
         <Flex w="80vw" marginLeft="10vw" marginRight="10vw">
-          <Swiper navigation={true} className="mySwiper" loop="true">
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
+          <Swiper
+            style={{
+              "--swiper-navigation-color": "#FFBA08",
+              "--swiper-pagination-color": "#fff",
+              height: "24rem",
+              margin: "0 0 2rem 0",
+            }}
+            speed={600}
+            parallax={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            className="mySwiper"
+            loop={true}
+          >
+            <div
+              slot="container-start"
+              className="parallax-bg"
+              data-swiper-parallax="-23%"
+            ></div>
+            <SwiperSlide
+              style={{
+                background:
+                  "url(https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGV1cm9wZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Flex
+                flexDirection="column"
+                align="center"
+                justify="center"
+                mt="4rem"
+              >
+                <Box fontSize="3em" color="white" fontWeight="bold">
+                  Europa
+                </Box>
+                <Box fontSize="1em" color="white" fontWeight="bold">
+                  O continente mais antigo.
+                </Box>
+              </Flex>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                background:
+                  "url(https://images.unsplash.com/photo-1596337231519-894df47ad02b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Flex
+                flexDirection="column"
+                align="center"
+                justify="center"
+                mt="4rem"
+              >
+                <Box fontSize="3em" color="white" fontWeight="bold">
+                  América
+                </Box>
+                <Box fontSize="1em" color="white" fontWeight="bold">
+                  A continente das oportunidades.
+                </Box>
+              </Flex>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                background:
+                  "url(https://images.unsplash.com/photo-1528277342758-f1d7613953a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFmcmljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=60)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Flex
+                flexDirection="column"
+                align="center"
+                justify="center"
+                mt="4rem"
+              >
+                <Box fontSize="3em" color="white" fontWeight="bold">
+                  África
+                </Box>
+                <Box fontSize="1em" color="white" fontWeight="bold">
+                  O continente da ancestralidade e belezas naturais
+                </Box>
+              </Flex>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                background:
+                  "url(https://images.unsplash.com/photo-1502099530544-2b61cbaed85c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Flex
+                flexDirection="column"
+                align="center"
+                justify="center"
+                mt="4rem"
+              >
+                <Box fontSize="3em" color="white" fontWeight="bold">
+                  Ásia
+                </Box>
+                <Box fontSize="1em" color="white" fontWeight="bold">
+                  O continente das inovações e tradições
+                </Box>
+              </Flex>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                background:
+                  "url(https://images.unsplash.com/photo-1622732692901-0a53ca7a2e61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG9jZWFuaWF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60)",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Flex
+                flexDirection="column"
+                align="center"
+                justify="center"
+                mt="4rem"
+              >
+                <Box fontSize="3em" color="white" fontWeight="bold">
+                  Oceania
+                </Box>
+                <Box fontSize="1em" color="white" fontWeight="bold">
+                  O novo mundo
+                </Box>
+              </Flex>
+            </SwiperSlide>
           </Swiper>
         </Flex>
       </Flex>
