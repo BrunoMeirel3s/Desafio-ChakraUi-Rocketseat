@@ -1,0 +1,204 @@
+{
+  "continents": [
+    {
+      "id": 1,
+      "name": "Europa",
+      "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "countries": "50",
+      "languagues": "60",
+      "amountCities100": "32",
+      "cities100": [
+        {
+          "picture": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flag": "https://www.countryflags.io/gb/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1431274172761-fca41d930114?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Paris",
+          "country": "França",
+          "flag": "https://www.countryflags.io/fr/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80",
+          "name": "Roma",
+          "country": "Itália",
+          "flag": "https://www.countryflags.io/it/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1564385209836-4c0621640e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80",
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flag": "https://www.countryflags.io/cz/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1562169966-b1f827a47670?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flag": "https://www.countryflags.io/nl/flat/64.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Asia",
+      "description": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial. A Ásia faz fronteira no lado ocidental com a África e com a Europa, e no lado oriental com o oceano Pacífico, a Oceania e, em menor proporção, com a América do Norte, pelo Estreito de Bering.",
+      "countries": "50",
+      "languagues": "44",
+      "amountCities100": "32",
+      "cities100": [
+        {
+          "picture": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flag": "https://www.countryflags.io/gb/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1431274172761-fca41d930114?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Paris",
+          "country": "França",
+          "flag": "https://www.countryflags.io/fr/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80",
+          "name": "Roma",
+          "country": "Itália",
+          "flag": "https://www.countryflags.io/it/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1564385209836-4c0621640e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80",
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flag": "https://www.countryflags.io/cz/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1562169966-b1f827a47670?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flag": "https://www.countryflags.io/nl/flat/64.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "América",
+      "description": "América é o continente localizado no hemisfério ocidental e que se estende, no sentido norte-sul, desde o oceano Ártico até o cabo Horn, ao longo de cerca de 15 mil quilômetros. O seu extremo oriental insular (não continental) encontra-se na Groenlândia, o Nordostrundingen, enquanto o ocidental localiza-se nas Aleutas",
+      "countries": "50",
+      "languagues": "44",
+      "amountCities100": "32",
+      "cities100": [
+        {
+          "picture": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flag": "https://www.countryflags.io/gb/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1431274172761-fca41d930114?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Paris",
+          "country": "França",
+          "flag": "https://www.countryflags.io/fr/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80",
+          "name": "Roma",
+          "country": "Itália",
+          "flag": "https://www.countryflags.io/it/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1564385209836-4c0621640e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80",
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flag": "https://www.countryflags.io/cz/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1562169966-b1f827a47670?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flag": "https://www.countryflags.io/nl/flat/64.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "África",
+      "description": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
+      "countries": "50",
+      "languagues": "44",
+      "amountCities100": "32",
+      "cities100": [
+        {
+          "picture": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flag": "https://www.countryflags.io/gb/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1431274172761-fca41d930114?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Paris",
+          "country": "França",
+          "flag": "https://www.countryflags.io/fr/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80",
+          "name": "Roma",
+          "country": "Itália",
+          "flag": "https://www.countryflags.io/it/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1564385209836-4c0621640e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80",
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flag": "https://www.countryflags.io/cz/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1562169966-b1f827a47670?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flag": "https://www.countryflags.io/nl/flat/64.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Oceania",
+      "description": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico (Polinésia, Melanésia e Micronésia). O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville. O termo é usado hoje em vários idiomas para designar uma região geográfica e política que compreende o continente da Austrália e ilhas do Oceano Pacífico adjacentes",
+      "countries": "50",
+      "languagues": "44",
+      "amountCities100": "32",
+      "cities100": [
+        {
+          "picture": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flag": "https://www.countryflags.io/gb/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1431274172761-fca41d930114?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Paris",
+          "country": "França",
+          "flag": "https://www.countryflags.io/fr/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80",
+          "name": "Roma",
+          "country": "Itália",
+          "flag": "https://www.countryflags.io/it/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1564385209836-4c0621640e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80",
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flag": "https://www.countryflags.io/cz/flat/64.png"
+        },
+        {
+          "picture": "https://images.unsplash.com/photo-1562169966-b1f827a47670?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flag": "https://www.countryflags.io/nl/flat/64.png"
+        }
+      ]
+    }
+  ]
+}

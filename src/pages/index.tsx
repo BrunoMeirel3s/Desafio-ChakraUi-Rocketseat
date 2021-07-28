@@ -28,15 +28,9 @@ import buildingImg from "../assets/building.png";
 import museumImg from "../assets/museum.png";
 import hearthImg from "../assets/earth.png";
 
-export default function Home() {
-  const imageSizes = useBreakpointValue({
-    base: { width: 81, height: 20 },
-    md: {
-      width: 184.06,
-      height: 45.92,
-    },
-  });
+import Header from "../components/Header";
 
+export default function Home() {
   const showAirPlane = useBreakpointValue({
     base: "none",
     md: "block",
@@ -53,20 +47,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <Flex w="100vw" h="100vh" flexDirection="column">
-        <Flex
-          as="header"
-          justify="center"
-          align="center"
-          h={["3.150em", "5em", "5.8em"]}
-          marginTop="0.5em"
-          marginBottom="0.5em"
-        >
-          <Image
-            src={logoImg}
-            width={imageSizes?.width}
-            height={imageSizes?.height}
-          ></Image>
-        </Flex>
+        <Header />
         <Flex>
           <Box position="absolute">
             <Image src={backgroundImg}></Image>
