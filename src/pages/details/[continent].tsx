@@ -1,18 +1,15 @@
 import Head from "next/head";
-import Image from "next/image";
 import {
   Flex,
   Box,
-  HStack,
-  Link,
   useBreakpointValue,
-  Circle,
-  Divider,
   SimpleGrid,
-  flexbox,
+  Image,
 } from "@chakra-ui/react";
 
+import CardCidade from "../../components/CardCidade";
 import Header from "../../components/Header";
+
 export default function Details() {
   const layout = useBreakpointValue({
     sm: true,
@@ -92,6 +89,42 @@ export default function Details() {
               cidades +100
             </Flex>
           </Flex>
+        </Flex>
+        <Flex ml="4em" mb="4em" flexDirection="column">
+          <Box color="headingsText" mb="0.8em" fontSize="1.8em">
+            Cidades +100
+          </Box>
+
+          <SimpleGrid columns={[1, 1, 2, 3, 4]} spacing={"2em"}>
+            <Box w={"256px"} h={"279px"} backgroundColor="hightlight50">
+              <Box
+                w="auto"
+                h="176px"
+                backgroundImage="url(https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80)"
+                style={{
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></Box>
+
+              <Flex justify="space-around" mt="1.5em" align="center">
+                <Flex flexDirection="column">
+                  <Box
+                    fontSize="1.5em"
+                    color="headingsText"
+                    fontWeight="medium"
+                  >
+                    Paris
+                  </Box>
+                  <Box color="info">França</Box>
+                </Flex>
+                <Box>
+                  <Image src="https://www.countryflags.io/gb/flat/64.png" />
+                </Box>
+              </Flex>
+            </Box>
+          </SimpleGrid>
         </Flex>
       </Flex>
     </>

@@ -4,7 +4,7 @@ import { transparentize } from "polished";
 export const theme = extendTheme({
   colors: {
     highlight: "#FFBA08",
-    hightlight50: transparentize(0.5, "#FFBA08"),
+    hightlight50: transparentize(0.9, "#FFBA08"),
     headingsText: "#47585B",
     info: "#999999",
     info50: transparentize(0.5, "#999999"),
