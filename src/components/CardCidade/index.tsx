@@ -1,10 +1,10 @@
-import { Flex, Box, Image, background } from "@chakra-ui/react";
+import { Flex, Box, Image } from "@chakra-ui/react";
 
 interface CardCidadeProps {
   cidade: {
-    background: string;
-    cidade: string;
-    pais: string;
+    picture: string;
+    name: string;
+    country: string;
     flag: string;
   };
 }
@@ -15,7 +15,7 @@ export default function CardCidade({ cidade }: CardCidadeProps) {
         <Box
           w="auto"
           h="176px"
-          backgroundImage={cidade.background}
+          backgroundImage={cidade.picture}
           style={{
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -26,9 +26,9 @@ export default function CardCidade({ cidade }: CardCidadeProps) {
         <Flex justify="space-around" mt="1.5em" align="center">
           <Flex flexDirection="column">
             <Box fontSize="1.5em" color="headingsText" fontWeight="medium">
-              {cidade.cidade}
+              {cidade.name}
             </Box>
-            <Box color="info">{cidade.pais}</Box>
+            <Box color="info">{cidade.country}</Box>
           </Flex>
           <Box>
             <Image src={cidade.flag} />

@@ -3,7 +3,6 @@ import Image from "next/image";
 import {
   Flex,
   Box,
-  HStack,
   Link,
   useBreakpointValue,
   Circle,
@@ -18,7 +17,6 @@ import SwiperCore, { Navigation, Parallax, Pagination } from "swiper/core";
 // install Swiper modules
 SwiperCore.use([Parallax, Pagination, Navigation]);
 
-import logoImg from "../assets/logo.png";
 import backgroundImg from "../assets/background.png";
 import airplaneImg from "../assets/airplane.png";
 
@@ -29,6 +27,7 @@ import museumImg from "../assets/museum.png";
 import hearthImg from "../assets/earth.png";
 
 import Header from "../components/Header";
+import React from "react";
 
 export default function Home() {
   const showAirPlane = useBreakpointValue({
@@ -86,7 +85,7 @@ export default function Home() {
           spacing={["4", "6"]}
           minChildWidth="150px"
         >
-          <Link>
+          <Link _hover={{ textDecoration: "none" }}>
             <Flex flexDirection={showImages ? "column" : "row"} align="center">
               {showImages ? (
                 <Image layout="fixed" src={glassImg}></Image>
@@ -96,7 +95,7 @@ export default function Home() {
               Vida noturna
             </Flex>
           </Link>
-          <Link>
+          <Link _hover={{ textDecoration: "none" }}>
             <Flex flexDirection={showImages ? "column" : "row"} align="center">
               {showImages ? (
                 <Image layout="fixed" src={beachImg}></Image>
@@ -106,7 +105,7 @@ export default function Home() {
               Praia
             </Flex>
           </Link>
-          <Link>
+          <Link _hover={{ textDecoration: "none" }}>
             <Flex flexDirection={showImages ? "column" : "row"} align="center">
               {showImages ? (
                 <Image layout="fixed" src={buildingImg}></Image>
@@ -116,7 +115,7 @@ export default function Home() {
               Moderno
             </Flex>
           </Link>
-          <Link>
+          <Link _hover={{ textDecoration: "none" }}>
             <Flex flexDirection={showImages ? "column" : "row"} align="center">
               {showImages ? (
                 <Image layout="fixed" src={museumImg}></Image>
@@ -126,7 +125,7 @@ export default function Home() {
               Clássico
             </Flex>
           </Link>
-          <Link>
+          <Link _hover={{ textDecoration: "none" }}>
             <Flex flexDirection={showImages ? "column" : "row"} align="center">
               {showImages ? (
                 <Image layout="fixed" src={hearthImg}></Image>
@@ -180,19 +179,21 @@ export default function Home() {
                 backgroundPosition: "center",
               }}
             >
-              <Flex
-                flexDirection="column"
-                align="center"
-                justify="center"
-                mt="4rem"
-              >
-                <Box fontSize="3em" color="white" fontWeight="bold">
-                  Europa
-                </Box>
-                <Box fontSize="1em" color="white" fontWeight="bold">
-                  O continente mais antigo.
-                </Box>
-              </Flex>
+              <Link href="/details/1" _hover={{ textDecoration: "none" }}>
+                <Flex
+                  flexDirection="column"
+                  align="center"
+                  justify="center"
+                  mt="4rem"
+                >
+                  <Box fontSize="3em" color="white" fontWeight="bold">
+                    Europa
+                  </Box>
+                  <Box fontSize="1em" color="white" fontWeight="bold">
+                    O continente mais antigo.
+                  </Box>
+                </Flex>
+              </Link>
             </SwiperSlide>
             <SwiperSlide
               style={{
@@ -203,19 +204,21 @@ export default function Home() {
                 backgroundPosition: "center",
               }}
             >
-              <Flex
-                flexDirection="column"
-                align="center"
-                justify="center"
-                mt="4rem"
-              >
-                <Box fontSize="3em" color="white" fontWeight="bold">
-                  América
-                </Box>
-                <Box fontSize="1em" color="white" fontWeight="bold">
-                  A continente das oportunidades.
-                </Box>
-              </Flex>
+              <Link href="/details/3" _hover={{ textDecoration: "none" }}>
+                <Flex
+                  flexDirection="column"
+                  align="center"
+                  justify="center"
+                  mt="4rem"
+                >
+                  <Box fontSize="3em" color="white" fontWeight="bold">
+                    América
+                  </Box>
+                  <Box fontSize="1em" color="white" fontWeight="bold">
+                    A continente das oportunidades.
+                  </Box>
+                </Flex>
+              </Link>
             </SwiperSlide>
             <SwiperSlide
               style={{
@@ -226,19 +229,21 @@ export default function Home() {
                 backgroundPosition: "center",
               }}
             >
-              <Flex
-                flexDirection="column"
-                align="center"
-                justify="center"
-                mt="4rem"
-              >
-                <Box fontSize="3em" color="white" fontWeight="bold">
-                  África
-                </Box>
-                <Box fontSize="1em" color="white" fontWeight="bold">
-                  O continente da ancestralidade e belezas naturais
-                </Box>
-              </Flex>
+              <Link href="/details/4" _hover={{ textDecoration: "none" }}>
+                <Flex
+                  flexDirection="column"
+                  align="center"
+                  justify="center"
+                  mt="4rem"
+                >
+                  <Box fontSize="3em" color="white" fontWeight="bold">
+                    África
+                  </Box>
+                  <Box fontSize="1em" color="white" fontWeight="bold">
+                    O continente da ancestralidade e belezas naturais
+                  </Box>
+                </Flex>
+              </Link>
             </SwiperSlide>
             <SwiperSlide
               style={{
@@ -249,19 +254,21 @@ export default function Home() {
                 backgroundPosition: "center",
               }}
             >
-              <Flex
-                flexDirection="column"
-                align="center"
-                justify="center"
-                mt="4rem"
-              >
-                <Box fontSize="3em" color="white" fontWeight="bold">
-                  Ásia
-                </Box>
-                <Box fontSize="1em" color="white" fontWeight="bold">
-                  O continente das inovações e tradições
-                </Box>
-              </Flex>
+              <Link href="/details/2" _hover={{ textDecoration: "none" }}>
+                <Flex
+                  flexDirection="column"
+                  align="center"
+                  justify="center"
+                  mt="4rem"
+                >
+                  <Box fontSize="3em" color="white" fontWeight="bold">
+                    Ásia
+                  </Box>
+                  <Box fontSize="1em" color="white" fontWeight="bold">
+                    O continente das inovações e tradições
+                  </Box>
+                </Flex>
+              </Link>
             </SwiperSlide>
             <SwiperSlide
               style={{
@@ -272,19 +279,21 @@ export default function Home() {
                 backgroundPosition: "center",
               }}
             >
-              <Flex
-                flexDirection="column"
-                align="center"
-                justify="center"
-                mt="4rem"
-              >
-                <Box fontSize="3em" color="white" fontWeight="bold">
-                  Oceania
-                </Box>
-                <Box fontSize="1em" color="white" fontWeight="bold">
-                  O novo mundo
-                </Box>
-              </Flex>
+              <Link href="/details/5" _hover={{ textDecoration: "none" }}>
+                <Flex
+                  flexDirection="column"
+                  align="center"
+                  justify="center"
+                  mt="4rem"
+                >
+                  <Box fontSize="3em" color="white" fontWeight="bold">
+                    Oceania
+                  </Box>
+                  <Box fontSize="1em" color="white" fontWeight="bold">
+                    O novo mundo
+                  </Box>
+                </Flex>
+              </Link>
             </SwiperSlide>
           </Swiper>
         </Flex>

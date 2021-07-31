@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Europa",
+      "imageBackground": "https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGV1cm9wZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60",
       "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
       "countries": "50",
       "languagues": "60",
@@ -43,6 +44,7 @@
     {
       "id": 2,
       "name": "Asia",
+      "imageBackground": "https://images.unsplash.com/photo-1502099530544-2b61cbaed85c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80",
       "description": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial. A Ásia faz fronteira no lado ocidental com a África e com a Europa, e no lado oriental com o oceano Pacífico, a Oceania e, em menor proporção, com a América do Norte, pelo Estreito de Bering.",
       "countries": "50",
       "languagues": "44",
@@ -83,6 +85,7 @@
     {
       "id": 3,
       "name": "América",
+      "imageBackground": "https://images.unsplash.com/photo-1596337231519-894df47ad02b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       "description": "América é o continente localizado no hemisfério ocidental e que se estende, no sentido norte-sul, desde o oceano Ártico até o cabo Horn, ao longo de cerca de 15 mil quilômetros. O seu extremo oriental insular (não continental) encontra-se na Groenlândia, o Nordostrundingen, enquanto o ocidental localiza-se nas Aleutas",
       "countries": "50",
       "languagues": "44",
@@ -123,6 +126,7 @@
     {
       "id": 4,
       "name": "África",
+      "imageBackground": "https://images.unsplash.com/photo-1528277342758-f1d7613953a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFmcmljYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=60",
       "description": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
       "countries": "50",
       "languagues": "44",
@@ -163,6 +167,7 @@
     {
       "id": 5,
       "name": "Oceania",
+      "imageBackground": "https://images.unsplash.com/photo-1622732692901-0a53ca7a2e61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG9jZWFuaWF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60",
       "description": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico (Polinésia, Melanésia e Micronésia). O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville. O termo é usado hoje em vários idiomas para designar uma região geográfica e política que compreende o continente da Austrália e ilhas do Oceano Pacífico adjacentes",
       "countries": "50",
       "languagues": "44",

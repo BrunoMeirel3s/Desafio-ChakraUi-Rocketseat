@@ -18,6 +18,7 @@ export const theme = extendTheme({
       body: {
         bg: "white",
         color: "headingsText",
+        overflowX: "hidden",
       },
     },
   },
